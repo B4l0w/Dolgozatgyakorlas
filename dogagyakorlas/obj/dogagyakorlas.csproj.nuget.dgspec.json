@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tanulo\\Git\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas\\dogagyakorlas.csproj": {}
+    "C:\\Users\\Bálint\\source\\repos\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tanulo\\Git\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas\\dogagyakorlas.csproj": {
+    "C:\\Users\\Bálint\\source\\repos\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tanulo\\Git\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas\\dogagyakorlas.csproj",
+        "projectUniqueName": "C:\\Users\\Bálint\\source\\repos\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas.csproj",
         "projectName": "dogagyakorlas",
-        "projectPath": "C:\\Users\\Tanulo\\Git\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas\\dogagyakorlas.csproj",
-        "packagesPath": "C:\\Users\\Tanulo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tanulo\\Git\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas\\obj\\",
+        "projectPath": "C:\\Users\\Bálint\\source\\repos\\Dolgozatgyakorlas\\dogagyakorlas\\dogagyakorlas.csproj",
+        "packagesPath": "C:\\Users\\Bálint\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bálint\\source\\repos\\Dolgozatgyakorlas\\dogagyakorlas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tanulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bálint\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

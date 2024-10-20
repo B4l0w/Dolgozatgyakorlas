@@ -49,5 +49,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "dogagyakorlas.Controllers.ValuesController",
+    "Method": "GetById",
+    "RelativePath": "api/Values/{azon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "azon",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "dogagyakorlas.Models.Jegyek",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

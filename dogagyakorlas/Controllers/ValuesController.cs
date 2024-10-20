@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 using System.Xml.Linq;
 
 namespace dogagyakorlas.Controllers
@@ -37,6 +38,26 @@ namespace dogagyakorlas.Controllers
             conn.Connection.Close();
 
             return jegyek;
+        }
+
+        [HttpGet("{azon}")]
+        public Jegyek GetById(Guid azon)
+        {
+            conn.Connection.Open();
+            string sql = $"SELECT * FROM `dolgozatok` WHERE Azon = \"{azon}\";";
+            MySqlCommand cmd = new MySqlCommand(sql, conn.Connection);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+
+            var result = new Jegyek
+            {
+                Azon = reader.GetGuid(0),
+                Jegy = reader.GetInt32(1),
+                Leiras = reader.GetString(2),
+                Createdtime = reader.GetDateTime(3),
+            };
+
+            return result;
         }
 
         [HttpPost]
