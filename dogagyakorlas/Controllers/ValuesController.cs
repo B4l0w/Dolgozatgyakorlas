@@ -102,6 +102,17 @@ namespace dogagyakorlas.Controllers
             };
             return result;
         }
+
+        [HttpDelete]
+        public void Delete(Guid Azon) 
+        {
+            conn.Connection.Open();
+            string sql = $"DELETE FROM `dolgozatok` WHERE Azon = \"{Azon}\"";
+            MySqlCommand cmd = new MySqlCommand (sql, conn.Connection );
+            cmd.ExecuteNonQuery();
+
+            conn.Connection.Close();
+        }
     }
 }
 

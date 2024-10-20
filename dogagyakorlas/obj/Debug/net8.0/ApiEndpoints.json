@@ -88,6 +88,28 @@
   },
   {
     "ContainingType": "dogagyakorlas.Controllers.ValuesController",
+    "Method": "Delete",
+    "RelativePath": "api/Values",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Azon",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "dogagyakorlas.Controllers.ValuesController",
     "Method": "GetById",
     "RelativePath": "api/Values/{azon}",
     "HttpMethod": "GET",
