@@ -52,6 +52,42 @@
   },
   {
     "ContainingType": "dogagyakorlas.Controllers.ValuesController",
+    "Method": "Put",
+    "RelativePath": "api/Values",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Azon",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewJegy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewLeiras",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "dogagyakorlas.Models.Jegyek",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "dogagyakorlas.Controllers.ValuesController",
     "Method": "GetById",
     "RelativePath": "api/Values/{azon}",
     "HttpMethod": "GET",

@@ -81,6 +81,27 @@ namespace dogagyakorlas.Controllers
             };
             return result;
         }
+
+        [HttpPut]
+        public Jegyek Put(Guid Azon, int NewJegy, string NewLeiras) 
+        {
+            conn.Connection.Open();
+            DateTime Createdtime = DateTime.Now;
+            string sql = $"UPDATE `dolgozatok` SET `Jegy`='{NewJegy}',`Leiras`='{NewLeiras}' WHERE Azon = \"{Azon}\"";
+            MySqlCommand cmd = new MySqlCommand ( sql, conn.Connection );
+            cmd.ExecuteNonQuery();
+
+            conn.Connection.Close();
+
+            var result = new Jegyek
+            {
+                Azon = Azon,
+                Jegy = NewJegy,
+                Leiras = NewLeiras,
+                Createdtime = DateTime.Now
+            };
+            return result;
+        }
     }
 }
 
